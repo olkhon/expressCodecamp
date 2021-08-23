@@ -10,7 +10,6 @@ app.get("/", function(req, res) {
 app.use("/public", express.static(__dirname + "/public"));
 app.get("/json", function (req, res) {
 
-    if()
     res.json({"message": "Hello json"});
     }  );
 
