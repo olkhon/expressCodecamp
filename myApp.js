@@ -34,7 +34,7 @@ app.get("/name", (req, res) => {
     const {first: firstname, last: lastname} = req.query;
 
     res.json({
-        name: `$firstname $lastname`
+        name: `${firstname} ${lastname}`
     })
 })
 
