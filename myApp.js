@@ -23,4 +23,12 @@ app.get(
   }
 );
 
+app.get(
+  "/:word/echo",
+  function (req, res, next) {
+    req.params.word = {echo:word};
+    next();
+  }
+);
+
 module.exports = app;
